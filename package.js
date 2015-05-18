@@ -3,7 +3,7 @@
 
 Package.describe({
   name: 'zcurtis:uikit',
-  version: '2.20.4',
+  version: '2.20.3',
   // Brief, one-line summary of the package.
   summary: 'UIKit repackaged for Meteor (from fork)',
   // URL to the Git repository containing the source code for this package.
@@ -23,7 +23,24 @@ Package.onUse(function(api) {
     'dist/fonts/fontawesome-webfont.woff2',
     'dist/css/uikit.almost-flat.css',
     'dist/js/uikit.js',
-    'dist/js/components/sticky.js'
+    'dist/js/components/accordion.js',
+    'dist/js/components/autocomplete.js',
+    'dist/js/components/datepicker.js',
+    'dist/js/components/form-password.js',
+    'dist/js/components/form-select.js',
+    'dist/js/components/grid.js',
+    'dist/js/components/htmleditor.js',
+    'dist/js/components/lightbox.js',
+    'dist/js/components/nestable.js',
+    'dist/js/components/notify.js',
+    'dist/js/components/pagination.js',
+    'dist/js/components/parallax.js',
+    'dist/js/components/search.js',
+    'dist/js/components/slider.js',
+    'dist/js/components/slideset.js',
+    'dist/js/components/sticky.js',
+    'dist/js/components/timepicker.js',
+    'dist/js/components/tooltip.js',
   ], 'client');
 });
 
