@@ -3,7 +3,7 @@
 
 Package.describe({
   name: 'zcurtis:uikit',
-  version: '2.20.3',
+  version: '2.20.4',
   // Brief, one-line summary of the package.
   summary: 'UIKit repackaged for Meteor (from fork)',
   // URL to the Git repository containing the source code for this package.
@@ -22,7 +22,8 @@ Package.onUse(function(api) {
     'dist/fonts/fontawesome-webfont.woff',
     'dist/fonts/fontawesome-webfont.woff2',
     'dist/css/uikit.almost-flat.css',
-    'dist/js/uikit.js'
+    'dist/js/uikit.js',
+    'dist/js/components/sticky.js'
   ], 'client');
 });
 
