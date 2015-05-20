@@ -3,7 +3,7 @@
 
 Package.describe({
   name: 'zcurtis:uikit',
-  version: '2.20.4',
+  version: '2.20.5',
   // Brief, one-line summary of the package.
   summary: 'UIKit repackaged for Meteor (from fork)',
   // URL to the Git repository containing the source code for this package.
