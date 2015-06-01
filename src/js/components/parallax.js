@@ -1,3 +1,4 @@
+/*! UIkit 2.21.0 | http://www.getuikit.com | (c) 2014 YOOtheme | MIT License */
 (function(addon) {
 
     var component;
@@ -37,7 +38,8 @@
         defaults: {
             velocity : 0.5,
             target   : false,
-            viewport : false
+            viewport : false,
+            media    : false
         },
 
         boot: function() {
@@ -95,7 +97,7 @@
             this.props    = {};
             this.velocity = (this.options.velocity || 1);
 
-            var reserved  = ['target','velocity','viewport','plugins'];
+            var reserved  = ['target','velocity','viewport','plugins','media'];
 
             Object.keys(this.options).forEach(function(prop){
 
@@ -128,6 +130,22 @@
         },
 
         process: function() {
+
+            if (this.options.media) {
+
+                switch(typeof(this.options.media)) {
+                    case 'number':
+                        if (window.innerWidth < this.options.media) {
+                            return false;
+                        }
+                        break;
+                    case 'string':
+                        if (window.matchMedia && !window.matchMedia(this.options.media).matches) {
+                            return false;
+                        }
+                        break;
+                }
+            }
 
             var percent = this.percentageInViewport();
 

@@ -1,5 +1,9 @@
 # UIkit
 
+If you are using Iron Router, you will need to add the folowing code for the JS components to function properly:
+Meteor.startup(function() {
+    $(document.body).attr('data-uk-observe', '1');
+});
 UIkit is a lightweight and modular front-end framework for developing fast and powerful web interfaces.
 
 * [Homepage](http://getuikit.com) - Learn more about UIkit
@@ -11,6 +15,7 @@ Join our developer chat. We are online every work day between 8:00 and 18:00 UTC
 [![Gitter](https://badges.gitter.im/Join%20Chat.svg)](https://gitter.im/uikit/uikit)
 
 ## Getting started
+
 
 You have following options to get UIkit:
 
