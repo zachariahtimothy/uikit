@@ -3,7 +3,7 @@
 
 Package.describe({
   name: 'zcurtis:uikit',
-  version: '2.23.0_1',
+  version: '2.23.0_2',
   // Brief, one-line summary of the package.
   summary: 'UIKit repackaged for Meteor (from fork)',
   // URL to the Git repository containing the source code for this package.
@@ -18,7 +18,6 @@ Package.onUse(function(api) {
   api.use('jquery', 'client');
 
   api.addAssets([
-    'dist/fonts/fontawesome-webfont.eot',
     'dist/fonts/fontawesome-webfont.ttf',
     'dist/fonts/fontawesome-webfont.woff',
     'dist/fonts/fontawesome-webfont.woff2',
@@ -49,7 +48,7 @@ Package.onUse(function(api) {
     'dist/css/components/tooltip.almost-flat.css',
     'dist/css/components/upload.almost-flat.css',
 
-    'dist/js/uikit.js',
+    'dist/js/uikit.min.js',
     'dist/js/components/accordion.js',
     'dist/js/components/autocomplete.js',
     'dist/js/components/datepicker.js',
