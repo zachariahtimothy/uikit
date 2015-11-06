@@ -24,11 +24,11 @@
 
             scrolltop = UI.$win.scrollTop();
 
-            window.requestAnimationFrame.apply(window, [function(){
+            window.requestAnimationFrame(function(){
                 for (var i=0; i < parallaxes.length; i++) {
                     parallaxes[i].process();
                 }
-            }]);
+            });
         };
 
 
@@ -84,7 +84,7 @@
                     var parallax = UI.$(this);
 
                     if (!parallax.data("parallax")) {
-                        var obj = UI.parallax(parallax, UI.Utils.options(parallax.attr("data-uk-parallax")));
+                        UI.parallax(parallax, UI.Utils.options(parallax.attr("data-uk-parallax")));
                     }
                 });
             });
@@ -282,7 +282,7 @@
 
     function initBgImageParallax(obj, prop, opts) {
 
-        var img = new Image(), url, loaded, element, size, check, ratio, width, height;
+        var img = new Image(), url, element, size, check, ratio, width, height;
 
         element = obj.element.css({'background-size': 'cover',  'background-repeat': 'no-repeat'});
         url     = element.css('background-image').replace(/^url\(/g, '').replace(/\)$/g, '').replace(/("|')/g, '');
@@ -292,6 +292,10 @@
 
             h += extra;
             w += Math.ceil(extra * ratio);
+
+            if (w > size.w && h < size.h) {
+                return obj.element.css({'background-size': ''});
+            }
 
             // if element height < parent height (gap underneath)
             if ((w / ratio) < h) {
@@ -304,7 +308,7 @@
                 height = Math.ceil(w / ratio);
             }
 
-            obj.element.css({'background-size': (width+'px '+height+'px')});
+            element.css({'background-size': (width+'px '+height+'px')});
         };
 
         img.onerror = function(){
@@ -312,7 +316,7 @@
         };
 
         img.onload = function(){
-            size  = {w:img.width, height:img.height};
+            size  = {w:img.width, h:img.height};
             ratio = img.width / img.height;
 
             UI.$win.on("load resize orientationchange", UI.Utils.debounce(function(){

@@ -1,5 +1,96 @@
 # Changelog
 
+### 2.23.0 (October 12, 2015)
+
+  - DEPRECATED: uk-dropdown-up, uk-dropdown-flip, uk-dropdown-center (Use ```pos``` property instead)
+  - Reworked dropdown component to allow any kind of popovers
+  - Added column component
+  - Added data-uk-svg helper (UIkit.Utils.inlineSvg)
+  - Added ```pos``` option to dropdown component
+  - Added .npmignore
+  - Updated image background-size calculation in parallax component
+  - Updated using requestAnimationFrame for document.scrolling event
+  - Updated default pagination component values
+  - Fixed overlay transition-properties
+  - Fixed scroll jumping for animated switchers on iOS
+  - Fixed pass swiping option to switcher component
+  - Fixed slider not showing the last element
+  - Fixed ensure open transition has happened before listening to closing transition (modal component)
+  - Fixed initdate when mindate integer (datepicker component)
+  - Fixed error in sticky.js in combination with dynamic grid
+  - Fixed touch.js error
+
+  **Docs and Repo**
+
+  - Added docs and tests for column component
+  - Added docs and tests for dropdown component
+
+### 2.22.0 (August 24, 2015)
+
+  - Added dropdown overlay mode
+  - Added autoplay to slider component
+  - Added animation duration variables to sticky
+  - Added showup + clsinactive option to sticky component
+  - Added swiping option to switcher component
+  - Updated icon component to FontAwesome to 4.4.0
+  - Updated placeholder default variables for all themes
+  - Updated position utility classes
+  - Updated sortable and nestable empty selectors
+  - Updated panel teaser selector
+  - Updated top parameter to support vh values + elements in sticky component
+  - Updated adjust document scrolling while dragging in sortable component
+  - Updated Youtube lighbox plugin to load maxres image
+  - Moved block padding adjustment into themes
+  - Unified sortable and nestable change event parameters
+  - Set Http-Accept-Header if JSON is requested (upload)
+  - Fixed element swapping between grouped lists
+  - Fixed grid match items to wrap onto multiple lines
+  - Fixed dropdown hide behavior
+  - Fixed dropdown prevent show() on active element
+  - Fixed stack margin with dynamic added children
+  - Fixed form icon margin
+  - Fixed timpicker flickering on blur after time picking
+  - Fixed pagination "currentPage" option
+  - Fixed initial focus on confirm dialog
+  - Fixed missing debounced redraw in htmleditor
+  - Fixed body width calculation on active offcanvas
+
+  **Docs and Repo**
+
+  - Added new video tutorial section
+  - Updated some tests and docs
+
+### 2.21.0 (June 01, 2015)
+
+  - IMPORTANT: Reworked nestable component
+  - Added uk-active class to form-select component
+  - Added uk-flex-nowrap class to flex component
+  - Added uk-icon-justify class to icon component
+  - Added kenburnsanimations option to slideshow component
+  - Added media option to parallax component
+  - Added connect multiple sortable lists
+  - Added activeClass option to tooltip component
+  - Added ignorestacked option to gridMatchHeight component
+  - Added UIkit.responsiveElement component (e.g. for iframes)
+  - Added UIkit.Utils.isFullscreen helper function
+  - Updated UIkit.modal.alert, UIkit.modal.prompt, UIkit.modal.confirm don't close open modals
+  - Updated tooltip component to look for an updated title attribute before show
+  - Updated timepicker to be initialized on a parent element
+  - Updated slideset filter activation
+  - Updated changed event from focus.uk.slider to focusitem.uk.slider
+  - Removed warp mode from sortable component
+  - Fixed tab component having no items
+  - Fixed slideset nav
+  - Fixed nestable maxdepth check when moving items between lists
+  - Fixed gulp css minifier
+
+  **Docs and Repo**
+
+  - Updated dynamic grid test and docs
+  - Updated sortable test and docs
+  - Updated nestable test and docs
+  - Updated icon test and docs
+
 ### 2.20.3 (May 04, 2015)
   - Updated jQuery to 2.1.4
   - Updated grid match items to wrap onto multiple lines

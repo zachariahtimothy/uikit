@@ -1,9 +1,5 @@
 # UIkit
 
-If you are using Iron Router, you will need to add the folowing code for the JS components to function properly:
-Meteor.startup(function() {
-    $(document.body).attr('data-uk-observe', '1');
-});
 UIkit is a lightweight and modular front-end framework for developing fast and powerful web interfaces.
 
 * [Homepage](http://getuikit.com) - Learn more about UIkit
@@ -15,7 +11,6 @@ Join our developer chat. We are online every work day between 8:00 and 18:00 UTC
 [![Gitter](https://badges.gitter.im/Join%20Chat.svg)](https://gitter.im/uikit/uikit)
 
 ## Getting started
-
 
 You have following options to get UIkit:
 
@@ -85,6 +80,8 @@ UIkit is maintained by using the [Semantic Versioning Specification (SemVer)](ht
 ![Chrome](https://raw.github.com/alrra/browser-logos/master/chrome/chrome_48x48.png) | ![Firefox](https://raw.github.com/alrra/browser-logos/master/firefox/firefox_48x48.png) | ![IE](https://raw.github.com/alrra/browser-logos/master/internet-explorer/internet-explorer_48x48.png) | ![Safari](https://raw.github.com/alrra/browser-logos/master/safari/safari_48x48.png) | ![Opera](https://raw.github.com/alrra/browser-logos/master/opera/opera_48x48.png)
 --- | --- | --- | --- | --- |
 Latest ✔ | Latest ✔ | 9+ ✔ | 7.1+ ✔ | Latest ✔ |
+
+Tested with [BrowserStack](https://www.browserstack.com) (thanks for sponsoring!).
 
 ## Copyright and License
 
