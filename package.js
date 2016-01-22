@@ -21,6 +21,7 @@ Package.onUse(function(api) {
     'dist/fonts/fontawesome-webfont.ttf',
     'dist/fonts/fontawesome-webfont.woff',
     'dist/fonts/fontawesome-webfont.woff2',
+    'dist/fonts/fontawesome-webfont.otf',
   ], 'client');
 
   api.addFiles([
