@@ -13,3 +13,4 @@
 .project
 .settings
 themes.json
+/bower_components
