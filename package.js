@@ -3,7 +3,7 @@
 
 Package.describe({
   name: 'zcurtis:uikit',
-  version: '2.24.3_1',
+  version: '2.24.3_2',
   // Brief, one-line summary of the package.
   summary: 'UIKit repackaged for Meteor (from fork)',
   // URL to the Git repository containing the source code for this package.
@@ -73,6 +73,8 @@ Package.onUse(function(api) {
     'dist/js/components/tooltip.js',
     'dist/js/components/upload.js',
   ], 'client');
+
+  api.export('UIkit', 'client');
 });
 
 Package.onTest(function(api) {
